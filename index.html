@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- google fonts end -->
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="./plugins/swiper/dist/swiper-bundle.css">
+  <!-- swiper end -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+
+      <div class="header__left">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img src="./images/Logo.png" alt="logo">
+          </a>
+        </div>
+
+        <div class="catalog">
+          <button class="catalog__button" type="button">
+            <img class="catalog__icon" src="./images/dotts.svg" alt="">
+            Каталог
+          </button>
+        </div>
+
+        <div class="search">
+          <form class="search__form" action="" method="get">
+            <img class="search__icon" src="./images/Magnifier.svg" alt="">
+            <input class="search__input" type="text" placeholder="Поиск трейдеров">
+          </form>
+        </div>
+      </div>
+
+      <div class="header__right">
+        <div class="icons">
+          <ul class="icons__list">
+            <li class="icons__item"><a class="icons__link" href="#"><img class="icons__img" src="./images/icon1.svg" alt=""></a></li>
+            <li class="icons__item"><a class="icons__link" href="#"><img class="icons__img" src="./images/icon2.svg" alt=""></a></li>
+            <li class="icons__item"><a class="icons__link" href="#"><img class="icons__img" src="./images/icon3.svg" alt=""></a></li>
+            <li class="icons__item"><a class="icons__link" href="#"><img class="icons__img" src="./images/icon4.svg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <section class="intro">
+    <div class="container">
+
+      <div class="intro__top">
+
+        <div class="intro__left">
+          <hgroup class="intro__hgroup">
+            <h1 class="intro__title"><strong class="intro__strong">Отзывы и рейтинг</strong> трейдеров России и мира</h1>
+            <p class="intro__sub-title">Поможем подобрать лучшего трейдера для достижения ваших финансовых целей</p>
+            <div class="intro__buttons">
+              <button class="intro__button intro__button_primary" type="button">
+                В каталог
+                <img class="intro__button-icon" src="./images/arrow.svg" alt="">
+              </button>
+              <button class="intro__button" type="button">Подробнее о проекте</button>
+            </div>
+          </hgroup>
+        </div>
+
+        <div class="intro__right">
+          <img class="intro__img" src="./images/background.png" alt="">
+        </div>
+
+      </div>
+
+      <div class="intro__bottom">
+        <ul class="intro__bottom-list">
+
+          <li class="intro__bottom-item">
+            <div class="intro__bottom-left">
+              <img class="intro__bottom-img" src="./images/card-search-svgrepo-com (1) 1.svg" alt="">
+            </div>
+            <div class="intro__bottom-right">
+              <h3 class="intro__bottom-title">250+</h3>
+              <h3 class="intro__bottom-sub-title">обзоров трейдеров</h3>
+            </div>
+          </li>
+
+          <li class="intro__bottom-item">
+            <div class="intro__bottom-left">
+              <img class="intro__bottom-img" src="./images/library-svgrepo-com 1.svg" alt="">
+            </div>
+            <div class="intro__bottom-right">
+              <h3 class="intro__bottom-title">150</h3>
+              <h3 class="intro__bottom-sub-title">курсов от трейдеров</h3>
+            </div>
+          </li>
+
+          <li class="intro__bottom-item">
+            <div class="intro__bottom-left">
+              <img class="intro__bottom-img" src="./images/user-check-svgrepo-com 1.svg" alt="">
+            </div>
+            <div class="intro__bottom-right">
+              <h3 class="intro__bottom-title">1,100</h3>
+              <h3 class="intro__bottom-sub-title">реальных отзывов</h3>
+            </div>
+          </li>
+
+          <li class="intro__bottom-item">
+            <div class="intro__bottom-left">
+              <img class="intro__bottom-img" src="./images/medal-ribbon-star-svgrepo-com 1.svg" alt="">
+            </div>
+            <div class="intro__bottom-right">
+              <h3 class="intro__bottom-title">5,000+</h3>
+              <h3 class="intro__bottom-sub-title">оценок пользователей</h3>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <section class="traders">
+    <div class="container">
+
+      <div class="traders__top">
+        <h2 class="traders__title">Проверенные <strong class="traders__strong">трейдеры</strong> с нашими обзорами</h2>
+        <a class="traders__link" href="#">
+          Больше трейдеров
+          <img class="traders__link-img" src="./images/arrow-linear.svg" alt="">
+        </a>
+      </div>
+
+      <div class="traders__middle">
+        <button class="traders__button traders__button_primary" type="button">Инвестирование</button>
+        <button class="traders__button" type="button">Форекс</button>
+        <button class="traders__button" type="button">Акции и облигации</button>
+        <button class="traders__button" type="button">Недвижимость</button>
+      </div>
+
+      <div class="traders__bottom swiper">
+        <div class="traders-slider__button-prev-wrapper">
+          <button class="traders-slider__button-prev" type="button">
+            <div class="traders-slider__button-prev-img-wrapper">
+              <img class="traders-slider__button-prev-img" src="./images/left-arrow.svg" alt="">
+            </div>
+          </button>
+        </div>
+
+        <ul class="traders__list swiper-wrapper">
+
+          <li class="traders__item swiper-slide">
+            <div class="traders__item-top">
+              <img class="traders__item-icon" src="./images/medal.png" alt="">
+              <div class="traders__item-info">
+                <img class="traders__item-star" src="./images/star.svg" alt="">
+                <div class="traders__item-number-primary">4.78</div>
+                <div class="traders__item-number">(142)</div>
+                <img class="traders__item-shield" src="./images/shield.svg" alt="">
+              </div>
+            </div>
+            <img class="traders__item-img" src="./images/Avatar.png" alt="">
+            <div class="traders__item-name">Андрей Читаев</div>
+            <div class="traders__item-tags">
+              <ul class="traders__item-tags-list">
+                <li class="traders__item-tags-item">#форекс</li>
+                <li class="traders__item-tags-item">#акции</li>
+                <li class="traders__item-tags-item">#инвестирование</li>
+              </ul>
+            </div>
+            <button class="traders__item-button" type="button">Читать обзор</button>
+          </li>
+
+          <li class="traders__item swiper-slide">
+            <div class="traders__item-top">
+              <img class="traders__item-icon" src="./images/medal.png" alt="">
+              <div class="traders__item-info">
+                <img class="traders__item-star" src="./images/star.svg" alt="">
+                <div class="traders__item-number-primary">4.78</div>
+                <div class="traders__item-number">(142)</div>
+                <img class="traders__item-shield" src="./images/shield.svg" alt="">
+              </div>
+            </div>
+            <img class="traders__item-img" src="./images/Avatar.png" alt="">
+            <div class="traders__item-name">Андрей Читаев</div>
+            <div class="traders__item-tags">
+              <ul class="traders__item-tags-list">
+                <li class="traders__item-tags-item">#форекс</li>
+                <li class="traders__item-tags-item">#акции</li>
+                <li class="traders__item-tags-item">#инвестирование</li>
+              </ul>
+            </div>
+            <button class="traders__item-button traders__item-button_primary" type="button">Читать обзор</button>
+          </li>
+
+          <li class="traders__item swiper-slide">
+            <div class="traders__item-top">
+              <img class="traders__item-icon" src="./images/medal.png" alt="">
+              <div class="traders__item-info">
+                <img class="traders__item-star" src="./images/star.svg" alt="">
+                <div class="traders__item-number-primary">4.78</div>
+                <div class="traders__item-number">(142)</div>
+                <img class="traders__item-shield" src="./images/shield.svg" alt="">
+              </div>
+            </div>
+            <img class="traders__item-img" src="./images/Avatar.png" alt="">
+            <div class="traders__item-name">Андрей Читаев</div>
+            <div class="traders__item-tags">
+              <ul class="traders__item-tags-list">
+                <li class="traders__item-tags-item">#форекс</li>
+                <li class="traders__item-tags-item">#акции</li>
+                <li class="traders__item-tags-item">#инвестирование</li>
+              </ul>
+            </div>
+            <button class="traders__item-button" type="button">Читать обзор</button>
+          </li>
+
+          <li class="traders__item swiper-slide">
+            <div class="traders__item-top">
+              <img class="traders__item-icon" src="./images/medal.png" alt="">
+              <div class="traders__item-info">
+                <img class="traders__item-star" src="./images/star.svg" alt="">
+                <div class="traders__item-number-primary">4.78</div>
+                <div class="traders__item-number">(142)</div>
+                <img class="traders__item-shield" src="./images/shield.svg" alt="">
+              </div>
+            </div>
+            <img class="traders__item-img" src="./images/Avatar.png" alt="">
+            <div class="traders__item-name">Андрей Читаев</div>
+            <div class="traders__item-tags">
+              <ul class="traders__item-tags-list">
+                <li class="traders__item-tags-item">#форекс</li>
+                <li class="traders__item-tags-item">#акции</li>
+                <li class="traders__item-tags-item">#инвестирование</li>
+              </ul>
+            </div>
+            <button class="traders__item-button" type="button">Читать обзор</button>
+          </li>
+
+          <li class="traders__item swiper-slide">
+            <div class="traders__item-top">
+              <img class="traders__item-icon" src="./images/medal.png" alt="">
+              <div class="traders__item-info">
+                <img class="traders__item-star" src="./images/star.svg" alt="">
+                <div class="traders__item-number-primary">4.78</div>
+                <div class="traders__item-number">(142)</div>
+                <img class="traders__item-shield" src="./images/shield.svg" alt="">
+              </div>
+            </div>
+            <img class="traders__item-img" src="./images/Avatar.png" alt="">
+            <div class="traders__item-name">Андрей Читаев</div>
+            <div class="traders__item-tags">
+              <ul class="traders__item-tags-list">
+                <li class="traders__item-tags-item">#форекс</li>
+                <li class="traders__item-tags-item">#акции</li>
+                <li class="traders__item-tags-item">#инвестирование</li>
+              </ul>
+            </div>
+            <button class="traders__item-button" type="button">Читать обзор</button>
+          </li>
+
+        </ul>
+
+        <div class="traders-slider__button-next-wrapper">
+          <button class="traders-slider__button-next" type="button">
+            <div class="traders-slider__button-next-img-wrapper">
+              <img class="traders-slider__button-next-img" src="./images/right-arrow.svg" alt="">
+            </div>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="rating">
+    <div class="container">
+
+      <div class="rating__top">
+        <h2 class="rating__title"><strong class="rating__strong">Рейтинг</strong> трейдеров в категориях</h2>
+        <a class="rating__link" href="#">
+          <span class="rating__link-span">Все категории</span>
+          <img class="rating__link-img" src="./images/arrow-linear.svg" alt="">
+        </a>
+      </div>
+
+      <div class="rating__middle">
+        <ul class="rating__list">
+
+          <li class="rating__item">
+            <div class="rating__item-left">
+              <img class="rating__item-icon" src="./images/Users.png" alt="">
+              <div class="rating__item-name">Инвестиции в недвижимость</div>
+            </div>
+            <div class="rating__item-right">
+              <a class="rating__item-link" href="#">
+                <span class="rating__item-span">422 трейдера</span>
+                <img class="rating__item-img" src="./images/arrow-blueviolet.svg" alt="">
+              </a>
+            </div>
+          </li>
+
+          <li class="rating__item">
+            <div class="rating__item-left">
+              <img class="rating__item-icon" src="./images/Users.png" alt="">
+              <div class="rating__item-name">Инвестиции в недвижимость</div>
+            </div>
+            <div class="rating__item-right">
+              <a class="rating__item-link" href="#">
+                <span class="rating__item-span">422 трейдера</span>
+                <img class="rating__item-img" src="./images/arrow-blueviolet.svg" alt="">
+              </a>
+            </div>
+          </li>
+
+          <li class="rating__item">
+            <div class="rating__item-left">
+              <img class="rating__item-icon" src="./images/Users.png" alt="">
+              <div class="rating__item-name">Инвестиции в недвижимость</div>
+            </div>
+            <div class="rating__item-right">
+              <a class="rating__item-link" href="#">
+                <span class="rating__item-span">422 трейдера</span>
+                <img class="rating__item-img" src="./images/arrow-blueviolet.svg" alt="">
+              </a>
+            </div>
+          </li>
+
+          <li class="rating__item">
+            <div class="rating__item-left">
+              <img class="rating__item-icon" src="./images/Users.png" alt="">
+              <div class="rating__item-name">Инвестиции в недвижимость</div>
+            </div>
+            <div class="rating__item-right">
+              <a class="rating__item-link" href="#">
+                <span class="rating__item-span">422 трейдера</span>
+                <img class="rating__item-img" src="./images/arrow-blueviolet.svg" alt="">
+              </a>
+            </div>
+          </li>
+
+          <li class="rating__item">
+            <div class="rating__item-left">
+              <img class="rating__item-icon" src="./images/Users.png" alt="">
+              <div class="rating__item-name">Инвестиции в недвижимость</div>
+            </div>
+            <div class="rating__item-right">
+              <a class="rating__item-link" href="#">
+                <span class="rating__item-span">422 трейдера</span>
+                <img class="rating__item-img" src="./images/arrow-blueviolet.svg" alt="">
+              </a>
+            </div>
+          </li>
+
+          <li class="rating__item">
+            <div class="rating__item-left">
+              <img class="rating__item-icon" src="./images/Users.png" alt="">
+              <div class="rating__item-name">Инвестиции в недвижимость</div>
+            </div>
+            <div class="rating__item-right">
+              <a class="rating__item-link" href="#">
+                <span class="rating__item-span">422 трейдера</span>
+                <img class="rating__item-img" src="./images/arrow-blueviolet.svg" alt="">
+              </a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+  <section class="feedback">
+    <div class="container">
+
+      <h2 class="feedback__title">Последние <strong class="feedback__strong">отзывы</strong> о трейдерах</h2>
+
+      <ul class="feedback__list">
+
+        <li class="feedback__item">
+          <div class="feedback__item-top">
+            <div class="feedback__item-top-left">
+              <div class="feedback__item-top-info">
+                <div class="feedback__item-top-info-left">
+                  <img class="feedback__item-top-info-icon" src="./images/Avatar2.png" alt="">
+                </div>
+                <div class="feedback__item-top-info-right">
+                  <div class="feedback__item-top-info-review">Отзыв о трейдере</div>
+                  <div class="feedback__item-top-info-name">Андрей Читаев</div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item-top-right">
+              <img class="feedback__item-top-like" src="./images/like.svg" alt="">
+            </div>
+          </div>
+          <div class="feedback__item-separator"></div>
+          <div class="feedback__item-middle">
+            <h3 class="feedback__item-middle-title">Трейдер огонь, рекомендую</h3>
+            <p class="feedback__item-middle-text">Lorem ipsum dolor sit amet consectetur. Lectus id sed dolor
+              scelerisque. Vitae erat quam purus consectetur nulla quisque. Eu vestibulum sem integer a arcu sodales ipsum
+              faucibus dignissim. Pellentesque sit ut scelerisque accumsan sed eget est. Turpis amet enim sed nibh.
+              Pellentesque mauris suspendisse at elit urna mauris. Nisi condimentum volutpat consectetur aliquam hendrerit
+              maecenas. Porttitor enim nunc condimentum nibh volutpat sed. Risus duis tristique massa arcu. Velit pulvinar
+              aenean pellentesque aenean et sed pulvinar tellus arcu. Fermentum tempus tempus sagittis in dictum.</p>
+          </div>
+          <div class="feedback__item-separator"></div>
+          <div class="feedback__item-bottom">
+            <div class="feedback__item-bottom-left">
+              <div class="feedback__item-bottom-info">
+                <div class="feedback__item-bottom-info-left">
+                  <img class="feedback__item-bottom-info-icon" src="./images/Exclamation Mark.svg" alt="">
+                </div>
+                <div class="feedback__item-bottom-info-right">
+                  <div class="feedback__item-bottom-info-name">Игорь Конев</div>
+                  <time class="feedback__item-bottom-info-date" datetime="07.05.2024 18:34">07 марта 2024 18:34</time>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item-bottom-right">
+              <div class="feedback__item-bottom-like">
+                <img class="feedback__item-bottom-like-icon" src="./images/like.svg" alt="">
+                <div class="feedback__item-bottom-like-number">12</div>
+              </div>
+              <div class="feedback__item-bottom-dislike">
+                <img class="feedback__item-bottom-dislike-icon" src="./images/dislike.svg" alt="">
+                <div class="feedback__item-bottom-dislike-number">3</div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="feedback__item">
+          <div class="feedback__item-top">
+            <div class="feedback__item-top-left">
+              <div class="feedback__item-top-info">
+                <div class="feedback__item-top-info-left">
+                  <img class="feedback__item-top-info-icon" src="./images/Avatar2.png" alt="">
+                </div>
+                <div class="feedback__item-top-info-right">
+                  <div class="feedback__item-top-info-review">Отзыв о трейдере</div>
+                  <div class="feedback__item-top-info-name">Андрей Читаев</div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item-top-right">
+              <img class="feedback__item-top-like" src="./images/like.svg" alt="">
+            </div>
+          </div>
+          <div class="feedback__item-separator"></div>
+          <div class="feedback__item-middle">
+            <h3 class="feedback__item-middle-title">Трейдер огонь, рекомендую</h3>
+            <p class="feedback__item-middle-text">Lorem ipsum dolor sit amet consectetur. Lectus id sed dolor
+              scelerisque. Vitae erat quam purus consectetur nulla quisque. Eu vestibulum sem integer a arcu sodales ipsum
+              faucibus dignissim. Pellentesque sit ut scelerisque accumsan sed eget est. Turpis amet enim sed nibh.
+              Pellentesque mauris suspendisse at elit urna mauris. Nisi condimentum volutpat consectetur aliquam hendrerit
+              maecenas. Porttitor enim nunc condimentum nibh volutpat sed. Risus duis tristique massa arcu. Velit pulvinar
+              aenean pellentesque aenean et sed pulvinar tellus arcu. Fermentum tempus tempus sagittis in dictum.</p>
+          </div>
+          <div class="feedback__item-separator"></div>
+          <div class="feedback__item-bottom">
+            <div class="feedback__item-bottom-left">
+              <div class="feedback__item-bottom-info">
+                <div class="feedback__item-bottom-info-left">
+                  <img class="feedback__item-bottom-info-icon" src="./images/Exclamation Mark.svg" alt="">
+                </div>
+                <div class="feedback__item-bottom-info-right">
+                  <div class="feedback__item-bottom-info-name">Игорь Конев</div>
+                  <time class="feedback__item-bottom-info-date" datetime="07.05.2024 18:34">07 марта 2024 18:34</time>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item-bottom-right">
+              <div class="feedback__item-bottom-like">
+                <img class="feedback__item-bottom-like-icon" src="./images/like.svg" alt="">
+                <div class="feedback__item-bottom-like-number">12</div>
+              </div>
+              <div class="feedback__item-bottom-dislike">
+                <img class="feedback__item-bottom-dislike-icon" src="./images/dislike.svg" alt="">
+                <div class="feedback__item-bottom-dislike-number">3</div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="feedback__item">
+          <div class="feedback__item-top">
+            <div class="feedback__item-top-left">
+              <div class="feedback__item-top-info">
+                <div class="feedback__item-top-info-left">
+                  <img class="feedback__item-top-info-icon" src="./images/Avatar2.png" alt="">
+                </div>
+                <div class="feedback__item-top-info-right">
+                  <div class="feedback__item-top-info-review">Отзыв о трейдере</div>
+                  <div class="feedback__item-top-info-name">Андрей Читаев</div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item-top-right">
+              <img class="feedback__item-top-like" src="./images/like.svg" alt="">
+            </div>
+          </div>
+          <div class="feedback__item-separator"></div>
+          <div class="feedback__item-middle">
+            <h3 class="feedback__item-middle-title">Трейдер огонь, рекомендую</h3>
+            <p class="feedback__item-middle-text">Lorem ipsum dolor sit amet consectetur. Lectus id sed dolor
+              scelerisque. Vitae erat quam purus consectetur nulla quisque. Eu vestibulum sem integer a arcu sodales ipsum
+              faucibus dignissim. Pellentesque sit ut scelerisque accumsan sed eget est. Turpis amet enim sed nibh.
+              Pellentesque mauris suspendisse at elit urna mauris. Nisi condimentum volutpat consectetur aliquam hendrerit
+              maecenas. Porttitor enim nunc condimentum nibh volutpat sed. Risus duis tristique massa arcu. Velit pulvinar
+              aenean pellentesque aenean et sed pulvinar tellus arcu. Fermentum tempus tempus sagittis in dictum.</p>
+          </div>
+          <div class="feedback__item-separator"></div>
+          <div class="feedback__item-bottom">
+            <div class="feedback__item-bottom-left">
+              <div class="feedback__item-bottom-info">
+                <div class="feedback__item-bottom-info-left">
+                  <img class="feedback__item-bottom-info-icon" src="./images/Exclamation Mark.svg" alt="">
+                </div>
+                <div class="feedback__item-bottom-info-right">
+                  <div class="feedback__item-bottom-info-name">Игорь Конев</div>
+                  <time class="feedback__item-bottom-info-date" datetime="07.05.2024 18:34">07 марта 2024 18:34</time>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item-bottom-right">
+              <div class="feedback__item-bottom-like">
+                <img class="feedback__item-bottom-like-icon" src="./images/like.svg" alt="">
+                <div class="feedback__item-bottom-like-number">12</div>
+              </div>
+              <div class="feedback__item-bottom-dislike">
+                <img class="feedback__item-bottom-dislike-icon" src="./images/dislike.svg" alt="">
+                <div class="feedback__item-bottom-dislike-number">3</div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="feedback__item">
+          <div class="feedback__item-top">
+            <div class="feedback__item-top-left">
+              <div class="feedback__item-top-info">
+                <div class="feedback__item-top-info-left">
+                  <img class="feedback__item-top-info-icon" src="./images/Avatar2.png" alt="">
+                </div>
+                <div class="feedback__item-top-info-right">
+                  <div class="feedback__item-top-info-review">Отзыв о трейдере</div>
+                  <div class="feedback__item-top-info-name">Андрей Читаев</div>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item-top-right">
+              <img class="feedback__item-top-like" src="./images/like.svg" alt="">
+            </div>
+          </div>
+          <div class="feedback__item-separator"></div>
+          <div class="feedback__item-middle">
+            <h3 class="feedback__item-middle-title">Трейдер огонь, рекомендую</h3>
+            <p class="feedback__item-middle-text">Lorem ipsum dolor sit amet consectetur. Lectus id sed dolor
+              scelerisque. Vitae erat quam purus consectetur nulla quisque. Eu vestibulum sem integer a arcu sodales ipsum
+              faucibus dignissim. Pellentesque sit ut scelerisque accumsan sed eget est. Turpis amet enim sed nibh.
+              Pellentesque mauris suspendisse at elit urna mauris. Nisi condimentum volutpat consectetur aliquam hendrerit
+              maecenas. Porttitor enim nunc condimentum nibh volutpat sed. Risus duis tristique massa arcu. Velit pulvinar
+              aenean pellentesque aenean et sed pulvinar tellus arcu. Fermentum tempus tempus sagittis in dictum.</p>
+          </div>
+          <div class="feedback__item-separator"></div>
+          <div class="feedback__item-bottom">
+            <div class="feedback__item-bottom-left">
+              <div class="feedback__item-bottom-info">
+                <div class="feedback__item-bottom-info-left">
+                  <img class="feedback__item-bottom-info-icon" src="./images/Exclamation Mark.svg" alt="">
+                </div>
+                <div class="feedback__item-bottom-info-right">
+                  <div class="feedback__item-bottom-info-name">Игорь Конев</div>
+                  <time class="feedback__item-bottom-info-date" datetime="07.05.2024 18:34">07 марта 2024 18:34</time>
+                </div>
+              </div>
+            </div>
+            <div class="feedback__item-bottom-right">
+              <div class="feedback__item-bottom-like">
+                <img class="feedback__item-bottom-like-icon" src="./images/like.svg" alt="">
+                <div class="feedback__item-bottom-like-number">12</div>
+              </div>
+              <div class="feedback__item-bottom-dislike">
+                <img class="feedback__item-bottom-dislike-icon" src="./images/dislike.svg" alt="">
+                <div class="feedback__item-bottom-dislike-number">3</div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="feedback__bottom">
+        <button class="feedback__bottom-button-readAll" type="button">Загрузить ещё</button>
+      </div>
+
+    </div>
+  </section>
+  <section class="info">
+    <div class="container">
+
+      <ul class="info__list">
+
+        <li class="info__item">
+          <div class="info__item-wrapper">
+            <div class="info__item-left">
+              <h2 class="info__item-title">О проекте</h2>
+              <div class="info__item-text">
+                <strong class="info__item-text-strong">ТрейдерГид.ру — ваш гид в мире трейдинга, каталог всех трейдеров
+                  России и мира, созданный командой ответственных людей, которые объединены одной целью: сделать процесс
+                  выбора трейдера-наставника более простым и надежным.</strong>
+                <p class="info__item-paragraph">Мы предлагаем объективный рейтинг и подробные обзоры, чтобы вы могли с
+                  уверенностью выбрать трейдера и улучшить свое финансовое положение без страха быть обманутым.</p>
+                <p class="info__item-paragraph">С помощью независимого каталога трейдеров и глубоких аналитических обзоров
+                  мы стараемся помочь нашим посетителям избежать сотрудничества с мошенниками и дилетантами, которые
+                  зарабатывают на доверии и слабой осведомленности интернет-пользователей.</p>
+              </div>
+              <button class="info__item-button" type="button">Читать далее</button>
+            </div>
+            <div class="info__item-right">
+              <img class="info__item-img" src="./images/hero.png" alt="">
+            </div>
+          </div>
+        </li>
+
+        <li class="info__item">
+          <div class="info__item-wrapper">
+            <div class="info__item-left">
+              <h2 class="info__item-title">О проекте</h2>
+              <div class="info__item-text">
+                <strong class="info__item-text-strong">ТрейдерГид.ру — ваш гид в мире трейдинга, каталог всех трейдеров
+                  России и мира, созданный командой ответственных людей, которые объединены одной целью: сделать процесс
+                  выбора трейдера-наставника более простым и надежным.</strong>
+                <p class="info__item-paragraph">Мы предлагаем объективный рейтинг и подробные обзоры, чтобы вы могли с
+                  уверенностью выбрать трейдера и улучшить свое финансовое положение без страха быть обманутым.</p>
+                <p class="info__item-paragraph">С помощью независимого каталога трейдеров и глубоких аналитических обзоров
+                  мы стараемся помочь нашим посетителям избежать сотрудничества с мошенниками и дилетантами, которые
+                  зарабатывают на доверии и слабой осведомленности интернет-пользователей.</p>
+                <p class="info__item-paragraph">Для этого мы тщательно исследуем деятельность трейдеров, собираем всю
+                  необходимую информацию из различных источников, включая реальные отзывы клиентов с разных сайтов. На
+                  основе этого формируем наш рейтинг лучших и надежных трейдеров, делаем заключение: стоит ли иметь дело у
+                  данного трейдера или лучше обратиться к кому-то другому.</p>
+              </div>
+            </div>
+            <div class="info__item-right">
+              <img class="info__item-img" src="./images/hero.png" alt="">
+            </div>
+          </div>
+
+          <div class="info__item2">
+            <div class="info__item2-left">
+              <img class="info__item2-img" src="./images/hero2.png" alt="">
+            </div>
+            <div class="info__item2-right">
+              <h3 class="info__item2-right-title">Наша миссия</h3>
+              <div class="info__item2-right-text">
+                <p class="info__item2-paragraph">Наша миссия заключается в том, чтобы предоставить надежную и независимую
+                  платформу для выбора трейдеров, благодаря которой вы сможете получить качественные финансовые услуги с
+                  минимальным риском потери своих денег.</p>
+                <p class="info__item2-paragraph">Мы стремимся оградить пользователей нашего сервиса от мошенников и
+                  некомпетентных трейдеров, предлагая актуальный и обновляемый рейтинг, расчёт которого ведется по
+                  уникальной формуле, разработанной нашей командой. Наша деятельность основана на принципах независимости
+                  и беспристрастности. Мы активно работаем над решением проблем, связанных с аферистами в сфере трейдинга.
+                </p>
+              </div>
+
+              <ul class="info__item2-list">
+
+                <li class="info__item2-item">
+                  <div class="info__item2-item-left">
+                    <img class="info__item2-item-img" src="./images/icon5.svg" alt="">
+                  </div>
+                  <div class="info__item2-item-right">
+                    <div class="info__item2-item-title">Независимость</div>
+                    <div class="info__item2-item-sub-title">Мы ценим свою независимость и стремимся к объективности. Наш
+                      проект не связан с какими-либо внешними интересами и не заинтересован в продвижении конкретных
+                      трейдеров. Наш выбор — это результат тщательного анализа и проверки.</div>
+                  </div>
+                </li>
+
+                <li class="info__item2-item">
+                  <div class="info__item2-item-left">
+                    <img class="info__item2-item-img" src="./images/icon6.svg" alt="">
+                  </div>
+                  <div class="info__item2-item-right">
+                    <div class="info__item2-item-title">Прозрачность</div>
+                    <div class="info__item2-item-sub-title">Мы стремимся обеспечить подлинность и достоверность всех
+                      отзывов на нашем сайте, так как заинтересованы в наполнении только честными мнениями от реальных
+                      пользователей. Наша команда активно выявляет и удаляет фальшивые и заказные отзывы, а также любую
+                      другую недостоверную информацию.</div>
+                  </div>
+                </li>
+
+                <li class="info__item2-item">
+                  <div class="info__item2-item-left">
+                    <img class="info__item2-item-img" src="./images/icon7.svg" alt="">
+                  </div>
+                  <div class="info__item2-item-right">
+                    <div class="info__item2-item-title">Объективная оценка</div>
+                    <div class="info__item2-item-sub-title">Наш рейтинг трейдеров — это не просто цифры. Он основан на
+                      комплексном анализе данных, нашим личном опыте и обратной связи от пользователей. Мы прилагаем все
+                      усилия для обеспечения максимальной прозрачности и объективности в оценке каждого трейдера.</div>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+          </div>
+
+          <button class="info__item2-button" type="button">Скрыть подробности</button>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+  <section class="faq">
+    <div class="container">
+
+      <div class="faq__left">
+        <h2 class="faq__title">Остались <strong class="faq__strong">вопросы?</strong></h2>
+
+        <div class="faq__block">
+          <h3 class="faq__block-title">Не нашли ответ на свой вопрос?</h3>
+          <button class="faq__block-button" type="button">Напишите нам?</button>
+        </div>
+      </div>
+
+      <div class="faq__right">
+
+        <ul class="faq__list accordion-container">
+
+          <li class="faq__item faq__accordion accordion ac">
+            <button class="accordion__button ac-header ac-trigger" type="button">
+              <div class="accordion__span">Как мы работаем? (Наш подход)</div>
+              <img class="accordion__collapse-icon" src="./images/Plus.svg" alt="">
+            </button>
+            <div class="accordion__middle ac-panel">
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Анализ трейдеров:</div>
+                <div class="accordion__middle-block-sub-title">Мы изучаем каждого трейдера, проверяя их квалификацию и
+                  репутацию.</div>
+              </div>
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Сбор отзывов:</div>
+                <div class="accordion__middle-block-sub-title">Реальные отзывы клиентов – наш приоритет. Мы собираем
+                  честные мнения для полного понимания качества обучения.</div>
+              </div>
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Обновляемые рейтинги:</div>
+                <div class="accordion__middle-block-sub-title">Наш рейтинг трейдеров регулярно обновляется, чтобы отражать
+                  последние тенденции и отзывы.</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq__item faq__accordion accordion ac">
+            <button class="accordion__button ac-header ac-trigger" type="button">
+              <div class="accordion__span">Как мы работаем? (Наш подход)</div>
+              <img class="accordion__collapse-icon" src="./images/Plus.svg" alt="">
+            </button>
+            <div class="accordion__middle ac-panel">
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Анализ трейдеров:</div>
+                <div class="accordion__middle-block-sub-title">Мы изучаем каждого трейдера, проверяя их квалификацию и
+                  репутацию.</div>
+              </div>
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Сбор отзывов:</div>
+                <div class="accordion__middle-block-sub-title">Реальные отзывы клиентов – наш приоритет. Мы собираем
+                  честные мнения для полного понимания качества обучения.</div>
+              </div>
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Обновляемые рейтинги:</div>
+                <div class="accordion__middle-block-sub-title">Наш рейтинг трейдеров регулярно обновляется, чтобы отражать
+                  последние тенденции и отзывы.</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq__item faq__accordion accordion ac">
+            <button class="accordion__button ac-header ac-trigger" type="button">
+              <div class="accordion__span">Как мы работаем? (Наш подход)</div>
+              <img class="accordion__collapse-icon" src="./images/Plus.svg" alt="">
+            </button>
+            <div class="accordion__middle ac-panel">
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Анализ трейдеров:</div>
+                <div class="accordion__middle-block-sub-title">Мы изучаем каждого трейдера, проверяя их квалификацию и
+                  репутацию.</div>
+              </div>
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Сбор отзывов:</div>
+                <div class="accordion__middle-block-sub-title">Реальные отзывы клиентов – наш приоритет. Мы собираем
+                  честные мнения для полного понимания качества обучения.</div>
+              </div>
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Обновляемые рейтинги:</div>
+                <div class="accordion__middle-block-sub-title">Наш рейтинг трейдеров регулярно обновляется, чтобы отражать
+                  последние тенденции и отзывы.</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="faq__item faq__accordion accordion ac">
+            <button class="accordion__button ac-header ac-trigger" type="button">
+              <div class="accordion__span">Как мы работаем? (Наш подход)</div>
+              <img class="accordion__collapse-icon" src="./images/Plus.svg" alt="">
+            </button>
+            <div class="accordion__middle ac-panel">
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Анализ трейдеров:</div>
+                <div class="accordion__middle-block-sub-title">Мы изучаем каждого трейдера, проверяя их квалификацию и
+                  репутацию.</div>
+              </div>
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Сбор отзывов:</div>
+                <div class="accordion__middle-block-sub-title">Реальные отзывы клиентов – наш приоритет. Мы собираем
+                  честные мнения для полного понимания качества обучения.</div>
+              </div>
+              <div class="accordion__middle-block ac-text">
+                <div class="accordion__middle-block-title">Обновляемые рейтинги:</div>
+                <div class="accordion__middle-block-sub-title">Наш рейтинг трейдеров регулярно обновляется, чтобы отражать
+                  последние тенденции и отзывы.</div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="main-block">
+    <div class="container">
+
+      <div class="main-block__left">
+        <h2 class="main-block__title">Выберите трейдера прямо сейчас!</h2>
+        <p class="main-block__sub-title">Обучение без рисков: найдите проверенного трейдера, который поможет вам в
+          достижении ваших финансовых целей</p>
+        <button class="main-block__button" type="button">
+          <span class="main-block__button-span">В каталог</span>
+          <img class="main-block__button-icon" src="./images/arrow-linear.svg" alt="">
+        </button>
+      </div>
+      <div class="main-block__right">
+        <img class="main-block__img" src="./images/img.png" alt="">
+      </div>
+
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <div class="footer__top-left">
+
+          <div class="logo">
+            <img class="logo__img" src="./images/Logo.png" alt="">
+          </div>
+
+        </div>
+
+        <div class="footer__top-right">
+
+          <nav class="nav">
+            <ul class="nav__list">
+
+              <li class="nav__item"><a class="nav__link" href="#">Блог</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Сотрудничество</a></li>
+
+            </ul>
+          </nav>
+
+          <div class="footer-icons">
+            <ul class="footer-icons__list">
+
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <img class="footer-icons__img" src="./images/telegram-svgrepo-com (1) 1.svg" alt="">
+                </a>
+              </li>
+
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <img class="footer-icons__img" src="./images/instagram-svgrepo-com 1.svg" alt="">
+                </a>
+              </li>
+
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <img class="footer-icons__img" src="./images/facebook-svgrepo-com 1.svg" alt="">
+                </a>
+              </li>
+
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <img class="footer-icons__img" src="./images/vk-svgrepo-com 1.svg" alt="">
+                </a>
+              </li>
+
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <img class="footer-icons__img" src="./images/odnoklassniki-svgrepo-com 1.svg" alt="">
+                </a>
+              </li>
+
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <img class="footer-icons__img" src="./images/youtube-168-svgrepo-com 1.svg" alt="">
+                </a>
+              </li>
+
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <img class="footer-icons__img" src="./images/google-svgrepo-com 1.svg" alt="">
+                </a>
+              </li>
+
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <img class="footer-icons__img" src="./images/whatsapp-whats-app-svgrepo-com 1.svg" alt="">
+                </a>
+              </li>
+
+              <li class="footer-icons__item">
+                <a class="footer-icons__link" href="#">
+                  <img class="footer-icons__img" src="./images/viber-chat-app-svgrepo-com 1.svg" alt="">
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer__middle">
+
+        <p class="footer__text">Вся информация на сайте носит ознакомительный характер. За порядочность и достоверность
+          информации онлайн-курсов, представленных на сайте, администрация ответственности не несет. Копирование
+          материалов сайта разрешено только с указанием ссылки на источник.</p>
+
+      </div>
+
+      <div class="footer__bottom">
+
+        <div class="footer__bottom-left">
+          <p class="footer__text">© 2024 TraderGid.ru – отзывы и рейтинг трейдеров</p>
+        </div>
+        <div class="footer__bottom-right">
+          <ul class="footer__bottom-list">
+
+            <li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Пользовательское соглашение</a></li>
+            <li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Политика конфиденциальности</a></li>
+            <li class="footer__bottom-item"><a class="footer__bottom-link" href="#">Правила публикации отзывов</a></li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+  <!-- swiper -->
+  <script src="./plugins/swiper/dist/swiper-bundle.js"></script>
+  <!-- accordion -->
+  <script src="./plugins/Accordion/dist/accordion.js"></script>
+  <!-- main script -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
